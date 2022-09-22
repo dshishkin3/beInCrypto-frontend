@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 40px;
+}
+
+.block {
+}
+
+.title {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.item {
+  color: #848e9c;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  &:hover {
+    transition: all 0.5s;
+    color: #eaecef;
+  }
+}

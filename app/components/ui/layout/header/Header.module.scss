@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & div {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
+  cursor: pointer;
+
+  & p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #f3ba2f;
+    margin-left: 5px;
+  }
+}
+
+.navItems {
+  display: flex;
+}
+
+.item {
+  margin-right: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+}
+
+.login {
+  margin-right: 24px;
+  cursor: pointer;
+}
+
+.language {
+  cursor: pointer;
+  padding-right: 10px;
+  border-right: 1px solid #848e9c;
+}
+
+.сurrency {
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #848e9c;
+}
+
+.theme {
+  cursor: pointer;
+  padding-left: 10px;
+}
