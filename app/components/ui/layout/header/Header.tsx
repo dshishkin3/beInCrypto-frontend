@@ -36,7 +36,7 @@ const Header: FC = () => {
           <p className={styles.login}>Log In</p>
         </Link>
         <Link href="/register">
-          <Button w={80} h={38} margin="0px 26px 0px 0px">
+          <Button w={80} h={38} color="#000" margin="0px 26px 0px 0px">
             Register
           </Button>
         </Link>

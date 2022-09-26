@@ -2,7 +2,7 @@
   "extends": ["next/core-web-vitals", "prettier"],
   "rules": {
     "no-unused-vars": "warn",
-    "no-console": "error",
+    "no-console": "warn",
     "quotes": ["error", "double"],
     "prefer-const": "error",
     "indent": ["warn", 2],
