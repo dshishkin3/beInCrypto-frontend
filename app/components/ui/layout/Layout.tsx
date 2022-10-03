@@ -14,7 +14,6 @@ const Layout: FC<ILayoutProps> = ({ children }) => {
     <div className={styles.container}>
       <Header />
       <div className={styles.wrapper}>{children}</div>
-
       <Footer />
     </div>
   );
