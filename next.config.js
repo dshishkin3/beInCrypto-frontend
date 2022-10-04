@@ -5,6 +5,15 @@ const nextConfig = {
   images: {
     domains: ["cdn.coinranking.com"],
   },
+  redirects: async () => {
+    return [
+      {
+        source: "/login",
+        destination: "/",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;

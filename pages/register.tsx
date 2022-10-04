@@ -1,19 +1,24 @@
-import { NextPage } from "next";
 import React from "react";
+
+import { NextPage } from "next";
 
 import Head from "next/head";
 
+import RegisterPage from "../app/components/screens/register-page/RegisterPage";
+import { ProtectedRoute } from "../app/components/protected-route/ProtectedRoute";
+
 const register: NextPage = () => {
-	//register
-	return (
-		<>
-			<Head>
-				<title>Register</title>
-				<meta name="description" content="Register" />
-			</Head>
-			<p>Register</p>
-		</>
-	);
+  return (
+    <>
+      <Head>
+        <title>Register</title>
+        <meta name="description" content="Register" />
+      </Head>
+      <ProtectedRoute mustAuth={false}>
+        <RegisterPage />
+      </ProtectedRoute>
+    </>
+  );
 };
 
 export default register;

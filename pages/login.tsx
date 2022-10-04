@@ -3,20 +3,19 @@ import React from "react";
 
 import Head from "next/head";
 
+import LoginPage from "../app/components/screens/login-page/LoginPage";
+import { ProtectedRoute } from "../app/components/protected-route/ProtectedRoute";
+
 const login: NextPage = () => {
-  //
-  //
-  //login
-  // test
-  // изменил что то т о то
   return (
     <>
       <Head>
         <title>Log In</title>
         <meta name="description" content="Log In" />
       </Head>
-
-      <p>Log In</p>
+      <ProtectedRoute mustAuth={false}>
+        <LoginPage />
+      </ProtectedRoute>
     </>
   );
 };
