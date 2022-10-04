@@ -1,3 +1,23 @@
 .container {
   margin-top: 60px;
 }
+
+.captions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  margin-right: 300px;
+  padding: 0px 10px;
+}
+
+.index {
+  margin-left: 40px;
+  margin-right: 38px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  width: 280px;
+}
