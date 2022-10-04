@@ -1,0 +1,19 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  font-size: 14px;
+  margin-bottom: var(--x2);
+}
+
+.input {
+  width: fit-content;
+  background-color: transparent;
+  padding: var(--x4);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--inactive-color-text);
+  font-size: 16px;
+}

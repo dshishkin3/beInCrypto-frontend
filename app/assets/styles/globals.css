@@ -37,3 +37,11 @@ input:active,
 input:focus {
   outline: none;
 }
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}

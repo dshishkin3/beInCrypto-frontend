@@ -1,0 +1,11 @@
+:root {
+  --x1: 4px;
+  --x2: calc(var(--x1) * 2);
+  --x4: calc(var(--x1) * 4);
+  --x6: calc(var(--x1) * 6);
+  --x8: calc(var(--x1) * 8);
+  --x9: calc(var(--x1) * 9);
+  --x11: calc(var(--x1) * 11);
+  --x12: calc(var(--x1) * 12);
+  --x16: calc(var(--x1) * 16);
+}

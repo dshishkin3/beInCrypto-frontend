@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React, { FC, ReactNode } from "react";
 
 import styles from "./Button.module.scss";
 
@@ -9,25 +9,24 @@ export interface IButtonProps
   > {
   children: ReactNode;
   onClick?: () => void;
-  color?: string;
-  w: number;
-  h: number;
   margin?: string;
+  variant?: "primary" | "secondary";
+  type?: "submit" | "reset" | "button" | undefined;
 }
 
-const Button = ({
+const Button: FC<IButtonProps> = ({
   children,
   onClick,
-  color,
-  w,
-  h,
   margin,
-}: IButtonProps): JSX.Element => {
+  variant = "primary",
+  type = "button",
+}): JSX.Element => {
   return (
     <button
-      style={{ color: color, height: h, width: w, margin: margin }}
+      type={type}
+      style={{ margin: margin }}
       onClick={onClick}
-      className={styles.container}
+      className={styles[variant]}
     >
       {children}
     </button>
