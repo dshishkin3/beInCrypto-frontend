@@ -23,6 +23,7 @@
         ],
         "newlines-between": "always-and-inside-groups"
       }
-    ]
+    ],
+    "react/display-name": "off"
   }
 }
