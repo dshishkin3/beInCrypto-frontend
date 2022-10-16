@@ -21,10 +21,13 @@ const Header: FC = () => {
           </div>
         </Link>
         <div className={styles.navItems}>
-          <div className={styles.item}>
-            <p>Crypto News</p>
-            <IoMdArrowDropdown color="#848E9C" size={20} />
-          </div>
+          <Link href='/news'>
+            <div className={styles.item}>
+              <p>Crypto News</p>
+              <IoMdArrowDropdown color="#848E9C" size={20} />
+            </div>
+          </Link>
+
           <div className={styles.item}>
             <p>Cryptocurrencies</p>
             <IoMdArrowDropdown color="#848E9C" size={20} />
@@ -36,9 +39,7 @@ const Header: FC = () => {
           <p className={styles.login}>Log In</p>
         </Link>
         <Link href="/register">
-          <Button margin="0px 26px 0px 0px">
-            Register
-          </Button>
+          <Button margin="0px 26px 0px 0px">Register</Button>
         </Link>
         <p className={styles.language}>English</p>
         <p className={styles.сurrency}>USD</p>

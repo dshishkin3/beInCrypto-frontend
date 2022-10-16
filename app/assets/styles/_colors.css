@@ -1,5 +1,8 @@
 :root {
   --inactive-color-text: #C0C0C0;
+  --capture-color-text: #CFCFCF;
   --border-color: #474D57;
   --primary-color: #FCD535;
+  --bg-card-color: #313131;
+  --secondary-color-text: #B7BDC6;
 }
