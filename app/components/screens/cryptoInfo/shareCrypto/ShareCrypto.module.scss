@@ -1,0 +1,23 @@
+.share{
+	position: fixed;
+	top: 10px;
+	right: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #171924;
+	padding: 10px;
+	border-radius: 10px;
+	span{
+		margin-left: 5px;
+	}
+}
+
+.share.hidden {
+	opacity: 0;
+	visibility: hidden;
+}
+.share.active {
+	opacity: 1;
+	visibility: visible;
+}

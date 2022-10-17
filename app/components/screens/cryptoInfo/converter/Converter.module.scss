@@ -1,0 +1,140 @@
+.converter{
+	max-width: 840px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid #323546;
+	border-radius: 8px;
+	margin: 18px 0px 47px 0px;
+	position: relative;
+	background: #171924;
+	top: 0px;
+	left: 0px;
+	
+	.coin{
+		padding: 26px 30px;
+		max-width: 360px;
+		align-self: center;
+		flex: 1 0 50%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-radius: 8px 0px 0px 8px;
+			span {
+					margin: 0px;
+					font-size: 0px;
+			}
+		input {
+			max-width: 100px;
+			border: none;
+			text-align: end;
+			font-size: 18px;
+			line-height: 22px;
+			color: #FFFFFF;
+			cursor: pointer;
+			margin: 0px;
+			padding: 0px;
+			}
+		.icon{
+			border-radius: 50px;
+			img{
+				border-radius: 50px;
+			}	
+			margin-right: 10px;
+		}
+		.items{
+			flex: 1 0 auto;
+			display: inline-flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+			margin-right: 4px;
+			.symbol{
+				font-weight: 700;
+				font-size: 10px;
+				line-height: 12px;
+				color: #A1A7BB;
+				margin-bottom: 2px;
+			}
+			.name{
+				font-weight: 700;
+				font-size: 10px;
+				line-height: 12px;
+				color: #FFFFFF;
+			}
+		}
+	}
+
+	.changeButton{
+		align-self: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin: 0px 40px;
+		background: #FFFFFF;
+		border-radius: 50px;
+		padding: 5px 5px;
+		cursor: pointer;
+		transition: all 0.3s;
+		&:hover{
+			transform: rotate(180deg);
+		}
+	}
+
+	.usd{
+		padding: 26px 30px;
+		max-width: 360px;
+		align-self: center;
+		flex: 1 0 50%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-radius: 8px;
+
+		
+		span{
+			margin: 0px;
+			font-size: 0px;
+		}
+		input{
+			max-width: 100px;
+			border: none;
+			text-align: end;
+			font-size: 18px;
+			line-height: 22px;
+			color: #FFFFFF;
+			cursor: pointer;
+			margin: 0px;
+			padding: 0px;
+		}
+		.icon{
+			border-radius: 50px;
+			img {
+					border-radius: 50px;
+			}
+			margin-right:10px;
+		}
+		.items{
+			flex: 1 0 auto;
+			display: inline-flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+			margin-right: 4px;
+			.symbol{
+				font-weight: 700;
+				font-size: 10px;
+				line-height: 12px;
+				color: #A1A7BB;
+				margin-bottom: 2px;
+			}
+			.name{
+				font-weight: 700;
+				font-size: 10px;
+				line-height: 12px;
+				color: #FFFFFF;
+			}
+		}
+	}
+}
