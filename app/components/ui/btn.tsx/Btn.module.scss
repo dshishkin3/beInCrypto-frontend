@@ -1,0 +1,25 @@
+.button{
+	cursor: pointer;
+	border-radius: 4px;
+	font-weight: 700;
+	font-size: 10px;
+	line-height: 12px;
+}
+.primary{
+	composes:button;
+	background: #323546;
+	color: var(--inactive-color-text);
+	&:hover{
+		background: #7D8093;
+	}
+}
+.secondary{
+	composes:button;
+	border: 1px solid #323232;
+	border-radius: 6px;
+	&:hover {
+			background: #7D8093;
+		}
+}
+
+

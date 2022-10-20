@@ -10,13 +10,15 @@ export interface ITitleProps
   children: ReactNode;
   size?: number | string;
   margin?: string;
+  tag?: "h1" | "h2" | "h3";
 }
 
-const Title = ({ children, size, margin }: ITitleProps): JSX.Element => {
+const Title = ({ tag, children, size, margin }: ITitleProps): JSX.Element => {
+  const Tag = tag || "h1";
   return (
-    <h1 style={{ margin: margin, fontSize: size }} className={styles.container}>
+    <Tag style={{ margin: margin, fontSize: size }} className={styles.container}>
       {children}
-    </h1>
+    </Tag>
   );
 };
 

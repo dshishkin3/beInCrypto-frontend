@@ -15,4 +15,18 @@ export type ICryptocurrency = {
   coinrankingUrl: string;
   "24hVolume": string;
   btcPrice: string;
+  websiteUrl: string;
+  links: any[];
+  description: string;
+  fullyDilutedMarketCap: string;
 };
+
+export interface ILinks {
+  name: string;
+  url: string;
+}
+
+export interface ICoinHistory {
+  price: string;
+  timestamp: number;
+}
