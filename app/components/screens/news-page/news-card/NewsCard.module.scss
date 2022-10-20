@@ -1,0 +1,29 @@
+.newsCard {
+  background-color: var(--bg-card-color);
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--x4);
+  box-shadow: 0 0 10px .5px rgba(0, 0, 0, 0.248);
+  box-sizing: border-box;
+  cursor: pointer;
+
+}
+
+.image {
+  border-radius: var(--x4);
+}
+
+.titleWrapper {
+  min-height: var(--x20);
+}
+
+.contentWrapper {
+  padding: var(--x4);
+  width: fit-content;
+}
+
+.bottomContent {
+  display: flex;
+  justify-content: space-between;
+}

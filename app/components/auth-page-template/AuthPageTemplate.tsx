@@ -2,6 +2,7 @@ import React, { FC, FormEventHandler } from "react";
 
 import Button from "../ui/button/Button";
 import Title from "../ui/title/Title";
+import Wrapper from "../ui/wrapper/Wrapper";
 
 import styles from "./AuthPageTemplate.module.css";
 
@@ -23,18 +24,20 @@ const AuthPageTemplate: FC<ITemplate> = ({
   title = "",
 }) => {
   return (
-    <>
-      <Title size={32} margin={"var(--x16) 0 var(--x11) 0"}>
-        {title}
-      </Title>
-      <form id="register-form" onSubmit={onSubmit} className={styles.form}>
-        <section className={styles.inputs}>{children}</section>
-        <section className={styles.bottom}>
-          <Button type="submit">{buttonText}</Button>
-          {additionalAction}
-        </section>
-      </form>
-    </>
+    <Wrapper>
+      <div className={styles.container}>
+        <Title size={32} margin={"var(--x16) 0 var(--x11) 0"}>
+          {title}
+        </Title>
+        <form id="register-form" onSubmit={onSubmit} className={styles.form}>
+          <section className={styles.inputs}>{children}</section>
+          <section className={styles.bottom}>
+            <Button type="submit">{buttonText}</Button>
+            {additionalAction}
+          </section>
+        </form>
+      </div>
+    </Wrapper>
   );
 };
 

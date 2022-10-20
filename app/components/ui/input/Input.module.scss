@@ -1,6 +1,7 @@
 .wrapper {
   display: flex;
   flex-direction: column;
+
 }
 
 .text {
@@ -9,7 +10,7 @@
 }
 
 .input {
-  width: fit-content;
+  width: 100%;
   background-color: transparent;
   padding: var(--x4);
   border: 1px solid var(--border-color);

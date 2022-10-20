@@ -88,6 +88,7 @@ export const get24hVolumeCryptocurrencies = {
   },
 };
 
+
 export const getCoinById = {
   fetchCoin(id: any) {
     return {
@@ -115,3 +116,19 @@ export const getCoinPriceHistory = {
     };
   }
 };
+
+export const getNews = {
+  method: "GET",
+  url: "https://investing-cryptocurrency-markets.p.rapidapi.com/coins/get-news",
+  params: {
+    pair_ID: "1057391",
+    page: "1",
+    time_utc_offset: "28800",
+    lang_ID: "1",
+  },
+  headers: {
+    "X-RapidAPI-Key": "8b3b748fffmsh46a937c0d656af6p1f5d83jsn58d8b29e39ad",
+    "X-RapidAPI-Host": "investing-cryptocurrency-markets.p.rapidapi.com",
+  },
+};
+

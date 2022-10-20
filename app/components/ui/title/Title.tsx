@@ -8,7 +8,7 @@ export interface ITitleProps
     HTMLParagraphElement
   > {
   children: ReactNode;
-  size?: number;
+  size?: number | string;
   margin?: string;
   tag?: "h1" | "h2" | "h3";
 }
